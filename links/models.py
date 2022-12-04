@@ -8,7 +8,7 @@ class Link(models.Model):
     photo_url = models.URLField(blank=True)
     current_price = models.FloatField(blank=True)
     old_price = models.FloatField(default=0)
-    price_difference = models.FloatField(default=0)
+    price_difference = models.FloatField(default=0, )
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
 

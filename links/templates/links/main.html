@@ -54,7 +54,7 @@
                 <div class="blockquote">
                     <div>current price : {{ item.current_price }}</div>
                     <div>old price: {{ item.old_price }}</div>
-                    <div>difference: {{ item.price_difference|colorize }}</div>
+                    <div>difference: {{ item.price_difference|floatformat:2 |colorize }}</div>
                     <div>link: <a href="{{ item.url }}">{{ item.url }}</a></div>
                     <div>created: {{ item.created }}</div>
                     <div>updated: {{ item.updated }}</div>
